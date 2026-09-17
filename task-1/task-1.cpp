@@ -2,19 +2,17 @@
 
 using namespace std;
 
-int main(){
+int main() {
 
-	int x, y, c;
+	int x , y , c , max ;
 	cout << "Enter three numbers: ";
 	cin >> x >> y >> c;
-	if (x > y && x > c) {
-		cout << "The largest number is: " << x << endl;
-	}
-	else if (y > x && y > c) {
-		cout << "The largest number is: " << y << endl;
-	}
-	else {
-		cout << "The largest number is: " << c << endl;
-	}
+	max = x;
+		if ( y > max )
+			max = y;
+		if ( c > max )
+			max = c;	
+		cout << "The largest number is: " << max;
+
 
 }
